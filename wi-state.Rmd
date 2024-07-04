@@ -3,3 +3,81 @@ title: "Wisconsin State Frisbee Tournament Results"
 output: html_document
 date: "2024-07-04"
 ---
+
+
+## Step 1: Parse the Text File
+We'll write a function to parse the text file and extract the tournament results.
+
+```{r}
+parse_tournament_results <- function(file_path) {
+  lines <- readLines(file_path)
+  tournaments <- list()
+  tournament <- list()
+  event <- NULL
+  category <- NULL
+  
+  for (line in lines) {
+    if (startsWith(line, "Year:")) {
+      if (length(tournament) > 0) {
+        tournaments <- append(tournaments, list(tournament))
+        tournament <- list()
+      }
+      tournament$year <- as.integer(gsub("Year: ", "", line))
+    } else if (startsWith(line, "City:")) {
+      tournament$city <- gsub("City: ", "", line)
+    } else if (startsWith(line, "Location:")) {
+      tournament$location <- gsub("Location: ", "", line)
+    } else if (grepl("Overall", line)) {
+      parts <- strsplit(line, ": ")[[1]]
+      event <- "Overall"
+      category <- sub("Overall (.*): .*", "\\1", line)
+      place <- sub(".* (\\d+)(st|nd|rd) .*: .*", "\\1", line)
+      name <- parts[2]
+      
+      if (is.null(tournament$events)) {
+        tournament$events <- list()
+      }
+      if (is.null(tournament$events[[event]])) {
+        tournament$events[[event]] <- list()
+      }
+      if (is.null(tournament$events[[event]][[category]])) {
+        tournament$events[[event]][[category]] <- list()
+      }
+      tournament$events[[event]][[category]][[place]] <- name
+    } else if (grepl("(Accuracy|Distance|MTA|Golf|Freestyle)", line)) {
+      parts <- strsplit(line, ": ")[[1]]
+      event <- sub("(.*) \\d+.*", "\\1", line)
+      category <- sub(".*(Junior15|Open|Women).*", "\\1", line)
+      place <- sub(".* (\\d+)(st|nd|rd) .*: .*", "\\1", line)
+      name <- parts[2]
+      
+      if (is.null(tournament$events)) {
+        tournament$events <- list()
+      }
+      if (is.null(tournament$events[[event]])) {
+        tournament$events[[event]] <- list()
+      }
+      if (is.null(tournament$events[[event]][[category]])) {
+        tournament$events[[event]][[category]] <- list()
+      }
+      tournament$events[[event]][[category]][[place]] <- name
+    }
+  }
+  
+  if (length(tournament) > 0) {
+    tournaments <- append(tournaments, list(tournament))
+  }
+  
+  return(tournaments)
+}
+```
+
+Example usage
+
+```{r}
+file_path <- 'data/tournament_results.txt'
+tournaments <- parse_tournament_results(file_path)
+print(tournaments)
+```
+
+
