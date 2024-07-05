@@ -4,9 +4,21 @@ output: html_document
 date: "2024-07-04"
 ---
 
+## Step 0: Clean the text file
 
-## Step 1: Parse the Text File
-We'll write a function to parse the text file and extract the tournament results.
+```{r}
+clean_file <- function(file_path) {
+  raw_content <- readBin(file_path, what = "raw", n = file.info(file_path)$size)
+  text_content <- rawToChar(raw_content)
+  text_content <- gsub("\0", "", text_content)  # Remove null characters
+  return(strsplit(text_content, "\n")[[1]])  # Split by lines
+}
+```
+
+
+## Step 1: Parse the text file
+
+A function to parse the text file and extract the tournament results.
 
 ```{r}
 parse_tournament_results <- function(file_path) {
