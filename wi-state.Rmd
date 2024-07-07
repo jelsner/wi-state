@@ -4,20 +4,6 @@ output: html_document
 date: "2024-07-04"
 ---
 
-## Step 0: Clean the text file
-
-```{r}
-clean_file <- function(file_path) {
-  raw_content <- readBin(file_path, what = "raw", n = file.info(file_path)$size)
-  text_content <- rawToChar(raw_content)
-  text_content <- gsub("\0", "", text_content)  # Remove null characters
-  return(strsplit(text_content, "\n")[[1]])  # Split by lines
-}
-```
-
-
-## Step 1: Parse the text file
-
 A function to parse the text file and extract the tournament results.
 
 ```{r}
@@ -39,29 +25,13 @@ parse_tournament_results <- function(file_path) {
       tournament$city <- gsub("City: ", "", line)
     } else if (startsWith(line, "Location:")) {
       tournament$location <- gsub("Location: ", "", line)
-    } else if (grepl("Overall", line)) {
+    } else if (grepl("(Overall|Accuracy|Distance|MTA|Golf|Freestyle|Discathon|Ultimate|Guts)", line)) {
       parts <- strsplit(line, ": ")[[1]]
-      event <- "Overall"
-      category <- sub("Overall (.*): .*", "\\1", line)
-      place <- sub(".* (\\d+)(st|nd|rd) .*: .*", "\\1", line)
-      name <- parts[2]
-      
-      if (is.null(tournament$events)) {
-        tournament$events <- list()
-      }
-      if (is.null(tournament$events[[event]])) {
-        tournament$events[[event]] <- list()
-      }
-      if (is.null(tournament$events[[event]][[category]])) {
-        tournament$events[[event]][[category]] <- list()
-      }
-      tournament$events[[event]][[category]][[place]] <- name
-    } else if (grepl("(Accuracy|Distance|MTA|Golf|Freestyle)", line)) {
-      parts <- strsplit(line, ": ")[[1]]
-      event <- sub("(.*) \\d+.*", "\\1", line)
-      category <- sub(".*(Junior15|Open|Women).*", "\\1", line)
-      place <- sub(".* (\\d+)(st|nd|rd) .*: .*", "\\1", line)
-      name <- parts[2]
+      event <- sub(" (\\d+)(st|nd|rd) .*: .*", "\\1", parts[1])
+      event_parts <- unlist(strsplit(parts[1], " "))
+      place <- event_parts[length(event_parts)]
+      category <- paste(event_parts[2:(length(event_parts)-1)], collapse = " ")
+      name <- ifelse(length(parts) > 1, parts[2], NA)
       
       if (is.null(tournament$events)) {
         tournament$events <- list()
@@ -82,14 +52,140 @@ parse_tournament_results <- function(file_path) {
   
   return(tournaments)
 }
-```
 
-Example usage
-
-```{r}
+# Example usage
 file_path <- 'data/tournament_results.txt'
 tournaments <- parse_tournament_results(file_path)
-print(tournaments)
+#print(tournaments)
 ```
+
+```{r}
+library(DBI)
+library(RSQLite)
+
+parse_tournament_results <- function(file_path) {
+  lines <- readLines(file_path)
+  tournaments <- list()
+  tournament <- list()
+  event <- NULL
+  category <- NULL
+  
+  for (line in lines) {
+    if (startsWith(line, "Year:")) {
+      if (length(tournament) > 0) {
+        tournaments <- append(tournaments, list(tournament))
+        tournament <- list()
+      }
+      tournament$year <- as.integer(gsub("Year: ", "", line))
+    } else if (startsWith(line, "City:")) {
+      tournament$city <- gsub("City: ", "", line)
+    } else if (startsWith(line, "Location:")) {
+      tournament$location <- gsub("Location: ", "", line)
+    } else if (grepl("(Overall|Accuracy|Distance|MTA|Golf|Freestyle|Discathon|Ultimate|Guts)", line)) {
+      parts <- strsplit(line, ": ")[[1]]
+      event <- sub(" (\\d+)(st|nd|rd) .*: .*", "\\1", parts[1])
+      event_parts <- unlist(strsplit(parts[1], " "))
+      place <- event_parts[length(event_parts)]
+      category <- paste(event_parts[2:(length(event_parts)-1)], collapse = " ")
+      name <- ifelse(length(parts) > 1, parts[2], NA)
+      
+      if (is.null(tournament$events)) {
+        tournament$events <- list()
+      }
+      if (is.null(tournament$events[[event]])) {
+        tournament$events[[event]] <- list()
+      }
+      if (is.null(tournament$events[[event]][[category]])) {
+        tournament$events[[event]][[category]] <- list()
+      }
+      tournament$events[[event]][[category]][[place]] <- name
+    }
+  }
+  
+  if (length(tournament) > 0) {
+    tournaments <- append(tournaments, list(tournament))
+  }
+  
+  return(tournaments)
+}
+
+create_database <- function(db_path) {
+  conn <- dbConnect(SQLite(), dbname = db_path)
+  
+  # Drop the existing tables if they exist
+  dbExecute(conn, 'DROP TABLE IF EXISTS Events')
+  dbExecute(conn, 'DROP TABLE IF EXISTS Tournaments')
+  
+  # Create the Tournaments table
+  dbExecute(conn, '
+  CREATE TABLE Tournaments (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      year INTEGER NOT NULL,
+      city TEXT,
+      location TEXT
+  )')
+  
+  # Create the Events table
+  dbExecute(conn, '
+  CREATE TABLE Events (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      tournament_id INTEGER,
+      event_name TEXT,
+      category TEXT,
+      place TEXT,
+      name TEXT,
+      FOREIGN KEY (tournament_id) REFERENCES Tournaments(id)
+  )')
+  
+  dbDisconnect(conn)
+}
+
+insert_data <- function(db_path, tournaments) {
+  conn <- dbConnect(SQLite(), dbname = db_path)
+  
+  for (tournament in tournaments) {
+    dbExecute(conn, '
+    INSERT INTO Tournaments (year, city, location)
+    VALUES (?, ?, ?)', 
+    params = list(tournament$year, tournament$city, tournament$location))
+    
+    tournament_id <- dbGetQuery(conn, 'SELECT last_insert_rowid()')[1,1]
+    
+    for (event in names(tournament$events)) {
+      for (category in names(tournament$events[[event]])) {
+        for (place in names(tournament$events[[event]][[category]])) {
+          name <- tournament$events[[event]][[category]][[place]]
+          dbExecute(conn, '
+          INSERT INTO Events (tournament_id, event_name, category, place, name)
+          VALUES (?, ?, ?, ?, ?)', 
+          params = list(tournament_id, event, category, place, name))
+        }
+      }
+    }
+  }
+  
+  dbDisconnect(conn)
+}
+
+query_database <- function(db_path, query) {
+  conn <- dbConnect(SQLite(), dbname = db_path)
+  results <- dbGetQuery(conn, query)
+  dbDisconnect(conn)
+  return(results)
+}
+
+# Example usage
+file_path <- 'data/tournament_results.txt'
+db_path <- 'data/tournament_results.db'
+tournaments <- parse_tournament_results(file_path)
+create_database(db_path)
+insert_data(db_path, tournaments)
+
+# Example query
+query <- 'SELECT * FROM Tournaments WHERE location = "Vollrath Park"'
+results <- query_database(db_path, query)
+print(results)
+```
+
 
 

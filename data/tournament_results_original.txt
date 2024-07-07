@@ -1,0 +1,664 @@
+Year: 1976
+City: Sheboygan
+Location: NA
+Overall 1st Junior12: NA
+Overall 2nd Junior12: NA
+Overall 3rd Junior12: NA
+Overall 1st Junior15: NA
+Overall 2nd Junior15: NA
+Overall 3rd Junior15: NA
+Overall 1st Open: NA
+Overall 2nd Open: NA
+Overall 3rd Open: NA
+Overall 1st Women: NA
+Overall 2nd Women: NA
+Overall 3rd Women: NA
+Overall 1st Amateur: NA
+Overall 2nd Amateur: NA
+Overall 3rd Amateur: NA
+Overall 1st Masters: NA
+Overall 2nd Masters: NA
+Overall 3rd Masters: NA
+Overall 1st Grandmasters: NA
+Overall 2nd Grandmasters: NA
+Overall 3rd Grandmasters: NA
+Accuracy 1st Junior12: Tom Dean
+Accuracy 2nd Junior12: Dick Fuestel
+Accuracy 3rd Junior12: Jay Johnson
+Accuracy 1st Junior15: Jeff Kovacich
+Accuracy 2nd Junior15: Randy Thiel
+Accuracy 3rd Junior15: NA
+Accuracy 1st Open: Gordan Johnson
+Accuracy 2nd Open: Gerald Henson
+Accuracy 3rd Open: Dave Pentek
+Accuracy 1st Women: NA
+Accuracy 2nd Women: NA
+Accuracy 3rd Women: NA
+Accuracy 1st Amateur: NA
+Accuracy 2nd Amateur: NA
+Accuracy 3rd Amateur: NA
+Accuracy 1st Masters: NA
+Accuracy 2nd Masters: NA
+Accuracy 3rd Masters: NA
+Accuracy 1st Grandmasters: NA
+Accuracy 2nd Grandmasters: NA
+Accuracy 3rd Grandmasters: NA
+Distance 1st Junior12: Jay Johnson
+Distance 2nd Junior12: Dick Fuestel
+Distance 3rd Junior12: Ben Paquette
+Distance 1st Junior15: Jeff Kovacich
+Distance 2nd Junior15: Randy Thiel
+Distance 3rd Junior15: NA
+Distance 1st Open: Jeff Stern
+Distance 2nd Open: Mickey Dwyer
+Distance 3rd Open: Jim Fredrick
+Distance 1st Women: NA
+Distance 2nd Women: NA
+Distance 3rd Women: NA
+Distance 1st Amateur: NA
+Distance 2nd Amateur: NA
+Distance 3rd Amateur: NA
+Distance 1st Masters: NA
+Distance 2nd Masters: NA
+Distance 3rd Masters: NA
+Distance 1st Grandmasters: NA
+Distance 2nd Grandmasters: NA
+Distance 3rd Grandmasters: NA
+MTA 1st Junior12: Bryan Dolnick
+MTA 2nd Junior12: Dick Fuestel
+MTA 3rd Junior12: Ben Paquette
+MTA 1st Junior15: Jeff Kovacich
+MTA 2nd Junior15: Randy Thiel
+MTA 3rd Junior15: NA
+MTA 1st Open: Robert Trautscold
+MTA 2nd Open: Jeff Stern
+MTA 3rd Open: Mickey Dwyer
+MTA 1st Women: NA
+MTA 2nd Women: NA
+MTA 3rd Women: NA
+MTA 1st Amateur: NA
+MTA 2nd Amateur: NA
+MTA 3rd Amateur: NA
+MTA 1st Masters: NA
+MTA 2nd Masters: NA
+MTA 3rd Masters: NA
+MTA 1st Grandmasters: NA
+MTA 2nd Grandmasters: NA
+MTA 3rd Grandmasters: NA
+Golf 1st Junior12: NA
+Golf 2nd Junior12: NA
+Golf 3rd Junior12: NA
+Golf 1st Junior15: NA
+Golf 2nd Junior15: NA
+Golf 3rd Junior15: NA
+Golf 1st Open: NA
+Golf 2nd Open: NA
+Golf 3rd Open: NA
+Golf 1st Women: NA
+Golf 2nd Women: NA
+Golf 3rd Women: NA
+Golf 1st Amateur: NA
+Golf 2nd Amateur: NA
+Golf 3rd Amateur: NA
+Golf 1st Masters: NA
+Golf 2nd Masters: NA
+Golf 3rd Masters: NA
+Golf 1st Grandmasters: NA
+Golf 2nd Grandmasters: NA
+Golf 3rd Grandmasters: NA
+Freestyle 1st Junior12: NA
+Freestyle 2nd Junior12: NA
+Freestyle 3rd Junior12: NA
+Freestyle 1st Junior15: NA
+Freestyle 2nd Junior15: NA
+Freestyle 3rd Junior15: NA
+Freestyle 1st Open: Gorden Johnson & Mike Larson
+Freestyle 2nd Open: NA
+Freestyle 3rd Open: NA
+Freestyle 1st Women: NA
+Freestyle 2nd Women: NA
+Freestyle 3rd Women: NA
+Freestyle 1st Amateur: NA
+Freestyle 2nd Amateur: NA
+Freestyle 3rd Amateur: NA
+Freestyle 1st Masters: NA
+Freestyle 2nd Masters: NA
+Freestyle 3rd Masters: NA
+Freestyle 1st Grandmasters: NA
+Freestyle 2nd Grandmasters: NA
+Freestyle 3rd Grandmasters: NA
+Discathon 1st Junior12: NA
+Discathon 2nd Junior12: NA
+Discathon 3rd Junior12: NA
+Discathon 1st Junior15: NA
+Discathon 2nd Junior15: NA
+Discathon 3rd Junior15: NA
+Discathon 1st Open: NA
+Discathon 2nd Open: NA
+Discathon 3rd Open: NA
+Discathon 1st Women: NA
+Discathon 2nd Women: NA
+Discathon 3rd Women: NA
+Discathon 1st Amateur: NA
+Discathon 2nd Amateur: NA
+Discathon 3rd Amateur: NA
+Discathon 1st Masters: NA
+Discathon 2nd Masters: NA
+Discathon 3rd Masters: NA
+Discathon 1st Grandmasters: NA
+Discathon 2nd Grandmasters: NA
+Discathon 3rd Grandmasters: NA
+Ultimate 1st Open: NA
+Ultimate 2nd Open: NA
+Ultimate 3rd Open: NA
+Ultimate 1st Women: NA
+Ultimate 2nd Women: NA
+Ultimate 3rd Women: NA
+Guts 1st Open: NA
+Guts 2nd Open: NA
+Guts 3rd Open: NA
+Guts 1st Women: NA
+Guts 2nd Women: NA
+Guts 3rd Women: NA
+K9 1st: NA
+K9 2nd: NA
+K9 3rd: NA
+
+Year: 1977
+City: Sheboygan
+Location: Vollrath Park
+Overall 1st Junior12: NA
+Overall 2nd Junior12: NA
+Overall 3rd Junior12: NA
+Overall 1st Junior15: NA
+Overall 2nd Junior15: NA
+Overall 3rd Junior15: NA
+Overall 1st Open: NA
+Overall 2nd Open: NA
+Overall 3rd Open: NA
+Overall 1st Women: NA
+Overall 2nd Women: NA
+Overall 3rd Women: NA
+Overall 1st Amateur: NA
+Overall 2nd Amateur: NA
+Overall 3rd Amateur: NA
+Overall 1st Masters: NA
+Overall 2nd Masters: NA
+Overall 3rd Masters: NA
+Overall 1st Grandmasters: NA
+Overall 2nd Grandmasters: NA
+Overall 3rd Grandmasters: NA
+Accuracy 1st Junior12: NA
+Accuracy 2nd Junior12: NA 
+Accuracy 3rd Junior12: NA
+Accuracy 1st Junior15: NA
+Accuracy 2nd Junior15: NA
+Accuracy 3rd Junior15: NA
+Accuracy 1st Open: Gary Stroick
+Accuracy 2nd Open: Dave Colten
+Accuracy 3rd Open: Jeff Ames
+Accuracy 1st Women: Laurie Gutchow
+Accuracy 2nd Women: Bethany Porter
+Accuracy 3rd Women: NA
+Accuracy 1st Amateur: NA
+Accuracy 2nd Amateur: NA
+Accuracy 3rd Amateur: NA
+Accuracy 1st Masters: NA
+Accuracy 2nd Masters: NA
+Accuracy 3rd Masters: NA
+Accuracy 1st Grandmasters: NA
+Accuracy 2nd Grandmasters: NA
+Accuracy 3rd Grandmasters: NA
+Distance 1st Junior12: NA 
+Distance 2nd Junior12: NA
+Distance 3rd Junior12: NA 
+Distance 1st Junior15: NA
+Distance 2nd Junior15: NA
+Distance 3rd Junior15: NA
+Distance 1st Open: Larry Trautschold 
+Distance 2nd Open: Tom Damico
+Distance 3rd Open: NA
+Distance 1st Women: Laurie Gutchow
+Distance 2nd Women: Kathy Hogan
+Distance 3rd Women: NA
+Distance 1st Amateur: NA
+Distance 2nd Amateur: NA
+Distance 3rd Amateur: NA
+Distance 1st Masters: NA
+Distance 2nd Masters: NA
+Distance 3rd Masters: NA
+Distance 1st Grandmasters: NA
+Distance 2nd Grandmasters: NA
+Distance 3rd Grandmasters: NA
+MTA 1st Junior12: NA
+MTA 2nd Junior12: NA
+MTA 3rd Junior12: NA
+MTA 1st Junior15: NA
+MTA 2nd Junior15: NA
+MTA 3rd Junior15: NA
+MTA 1st Open: Jeff Ames
+MTA 2nd Open: Bruce Wilk
+MTA 3rd Open: Larry Trautschold
+MTA 1st Women: Lisa Quisdorf
+MTA 2nd Women: Lyn Burns
+MTA 3rd Women: NA
+MTA 1st Amateur: NA
+MTA 2nd Amateur: NA
+MTA 3rd Amateur: NA
+MTA 1st Masters: NA
+MTA 2nd Masters: NA
+MTA 3rd Masters: NA
+MTA 1st Grandmasters: NA
+MTA 2nd Grandmasters: NA
+MTA 3rd Grandmasters: NA
+Golf 1st Junior12: NA
+Golf 2nd Junior12: NA
+Golf 3rd Junior12: NA
+Golf 1st Junior15: NA
+Golf 2nd Junior15: NA
+Golf 3rd Junior15: NA
+Golf 1st Open: Steve Matul
+Golf 2nd Open: Dave Opgenorth
+Golf 3rd Open: Greg Leich
+Golf 1st Women: Jill Johnson
+Golf 2nd Women: Beth Herbert
+Golf 3rd Women: NA
+Golf 1st Amateur: NA
+Golf 2nd Amateur: NA
+Golf 3rd Amateur: NA
+Golf 1st Masters: NA
+Golf 2nd Masters: NA
+Golf 3rd Masters: NA
+Golf 1st Grandmasters: NA
+Golf 2nd Grandmasters: NA
+Golf 3rd Grandmasters: NA
+Freestyle 1st Junior12: NA
+Freestyle 2nd Junior12: NA
+Freestyle 3rd Junior12: NA
+Freestyle 1st Junior15: NA
+Freestyle 2nd Junior15: NA
+Freestyle 3rd Junior15: NA
+Freestyle 1st Open: Steve Matul & Randy Rand
+Freestyle 2nd Open: Bruce Wilk & Bill White
+Freestyle 3rd Open: Andrew Lemann & Steve Van Veghel
+Freestyle 1st Women: Kim Lorenz & Laurie Gutchow
+Freestyle 2nd Women: Bethany Porter & Lyn Burns
+Freestyle 3rd Women: NA
+Freestyle 1st Amateur: NA
+Freestyle 2nd Amateur: NA
+Freestyle 3rd Amateur: NA
+Freestyle 1st Masters: NA
+Freestyle 2nd Masters: NA
+Freestyle 3rd Masters: NA
+Freestyle 1st Grandmasters: NA
+Freestyle 2nd Grandmasters: NA
+Freestyle 3rd Grandmasters: NA
+Discathon 1st Junior12: NA
+Discathon 2nd Junior12: NA
+Discathon 3rd Junior12: NA
+Discathon 1st Junior15: NA
+Discathon 2nd Junior15: NA
+Discathon 3rd Junior15: NA
+Discathon 1st Open: NA
+Discathon 2nd Open: NA
+Discathon 3rd Open: NA
+Discathon 1st Women: NA
+Discathon 2nd Women: NA
+Discathon 3rd Women: NA
+Discathon 1st Amateur: NA
+Discathon 2nd Amateur: NA
+Discathon 3rd Amateur: NA
+Discathon 1st Masters: NA
+Discathon 2nd Masters: NA
+Discathon 3rd Masters: NA
+Discathon 1st Grandmasters: NA
+Discathon 2nd Grandmasters: NA
+Discathon 3rd Grandmasters: NA
+Ultimate 1st Open: NA
+Ultimate 2nd Open: NA
+Ultimate 3rd Open: NA
+Ultimate 1st Women: NA
+Ultimate 2nd Women: NA
+Ultimate 3rd Women: NA
+Guts 1st Open: B&B Tap, Oshkosh, WI
+Guts 2nd Open: Zunts, Manitowoc, WI
+Guts 3rd Open: NA
+Guts 1st Women: B&B Tap, Oshkosh, WI
+Guts 2nd Women: Thundering Zunts, Manitowoc, WI
+Guts 3rd Women: NA
+K9 1st: Columbo Aquanut Burns
+K9 2nd: Hannah Colton
+K9 3rd: NA
+
+Year: 1978
+City: Sheboygan
+Location: Vollrath Park
+Overall 1st Junior12: NA
+Overall 2nd Junior12: NA
+Overall 3rd Junior12: NA
+Overall 1st Junior15: NA
+Overall 2nd Junior15: NA
+Overall 3rd Junior15: NA
+Overall 1st Open: NA
+Overall 2nd Open: NA
+Overall 3rd Open: NA
+Overall 1st Women: NA
+Overall 2nd Women: NA
+Overall 3rd Women: NA
+Overall 1st Amateur: NA
+Overall 2nd Amateur: NA
+Overall 3rd Amateur: NA
+Overall 1st Masters: NA
+Overall 2nd Masters: NA
+Overall 3rd Masters: NA
+Overall 1st Grandmasters: NA
+Overall 2nd Grandmasters: NA
+Overall 3rd Grandmasters: NA
+Accuracy 1st Junior12: NA
+Accuracy 2nd Junior12: NA 
+Accuracy 3rd Junior12: NA
+Accuracy 1st Junior15: NA
+Accuracy 2nd Junior15: NA
+Accuracy 3rd Junior15: NA
+Accuracy 1st Open: NA
+Accuracy 2nd Open: NA
+Accuracy 3rd Open: NA
+Accuracy 1st Women: NA
+Accuracy 2nd Women: NA
+Accuracy 3rd Women: NA
+Accuracy 1st Amateur: NA
+Accuracy 2nd Amateur: NA
+Accuracy 3rd Amateur: NA
+Accuracy 1st Masters: NA
+Accuracy 2nd Masters: NA
+Accuracy 3rd Masters: NA
+Accuracy 1st Grandmasters: NA
+Accuracy 2nd Grandmasters: NA
+Accuracy 3rd Grandmasters: NA
+Distance 1st Junior12: NA 
+Distance 2nd Junior12: NA
+Distance 3rd Junior12: NA 
+Distance 1st Junior15: NA
+Distance 2nd Junior15: NA
+Distance 3rd Junior15: NA
+Distance 1st Open: NA 
+Distance 2nd Open: NA
+Distance 3rd Open: NA
+Distance 1st Women: NA
+Distance 2nd Women: NA
+Distance 3rd Women: NA
+Distance 1st Amateur: NA
+Distance 2nd Amateur: NA
+Distance 3rd Amateur: NA
+Distance 1st Masters: NA
+Distance 2nd Masters: NA
+Distance 3rd Masters: NA
+Distance 1st Grandmasters: NA
+Distance 2nd Grandmasters: NA
+Distance 3rd Grandmasters: NA
+MTA 1st Junior12: NA
+MTA 2nd Junior12: NA
+MTA 3rd Junior12: NA
+MTA 1st Junior15: NA
+MTA 2nd Junior15: NA
+MTA 3rd Junior15: NA
+MTA 1st Open: NA
+MTA 2nd Open: NA
+MTA 3rd Open: NA
+MTA 1st Women: NA
+MTA 2nd Women: NA
+MTA 3rd Women: NA
+MTA 1st Amateur: NA
+MTA 2nd Amateur: NA
+MTA 3rd Amateur: NA
+MTA 1st Masters: NA
+MTA 2nd Masters: NA
+MTA 3rd Masters: NA
+MTA 1st Grandmasters: NA
+MTA 2nd Grandmasters: NA
+MTA 3rd Grandmasters: NA
+Golf 1st Junior12: NA
+Golf 2nd Junior12: NA
+Golf 3rd Junior12: NA
+Golf 1st Junior15: Kurt Zingshein
+Golf 2nd Junior15: Bob Frank
+Golf 3rd Junior15: Kent Jurk
+Golf 1st Open: Greg Koller
+Golf 2nd Open: Paul Burns
+Golf 3rd Open: John Ballsrud
+Golf 1st Women: Laurie Gutschow
+Golf 2nd Women: Lyn Burns
+Golf 3rd Women: Bethany Porter
+Golf 1st Amateur: NA
+Golf 2nd Amateur: NA
+Golf 3rd Amateur: NA
+Golf 1st Masters: NA
+Golf 2nd Masters: NA
+Golf 3rd Masters: NA
+Golf 1st Grandmasters: NA
+Golf 2nd Grandmasters: NA
+Golf 3rd Grandmasters: NA
+Freestyle 1st Junior12: NA
+Freestyle 2nd Junior12: NA
+Freestyle 3rd Junior12: NA
+Freestyle 1st Junior15: NA
+Freestyle 2nd Junior15: NA
+Freestyle 3rd Junior15: NA
+Freestyle 1st Open: Andrew Lemann & Kinney Adams & Bob Rothman
+Freestyle 2nd Open: John & Bill Ballsrud & Raglin & Dwyer
+Freestyle 3rd Open: NA
+Freestyle 1st Women: Lyn Wilk & Laurie Gutschow
+Freestyle 2nd Women: Patti Gustchow & Tracy Virgin
+Freestyle 3rd Women: NA
+Freestyle 1st Amateur: NA
+Freestyle 2nd Amateur: NA
+Freestyle 3rd Amateur: NA
+Freestyle 1st Masters: NA
+Freestyle 2nd Masters: NA
+Freestyle 3rd Masters: NA
+Freestyle 1st Grandmasters: NA
+Freestyle 2nd Grandmasters: NA
+Freestyle 3rd Grandmasters: NA
+Discathon 1st Junior12: NA
+Discathon 2nd Junior12: NA
+Discathon 3rd Junior12: NA
+Discathon 1st Junior15: NA
+Discathon 2nd Junior15: NA
+Discathon 3rd Junior15: NA
+Discathon 1st Open: NA
+Discathon 2nd Open: NA
+Discathon 3rd Open: NA
+Discathon 1st Women: NA
+Discathon 2nd Women: NA
+Discathon 3rd Women: NA
+Discathon 1st Amateur: NA
+Discathon 2nd Amateur: NA
+Discathon 3rd Amateur: NA
+Discathon 1st Masters: NA
+Discathon 2nd Masters: NA
+Discathon 3rd Masters: NA
+Discathon 1st Grandmasters: NA
+Discathon 2nd Grandmasters: NA
+Discathon 3rd Grandmasters: NA
+Ultimate 1st Open: University of Wisconsin-Madison, Madison, WI
+Ultimate 2nd Open: Milwaukee Disc Aliance, Milwaukee, WI
+Ultimate 3rd Open: Bratwurst City Frisbee, Sheboygan, WI
+Ultimate 1st Women: NA
+Ultimate 2nd Women: NA
+Ultimate 3rd Women: NA
+Guts 1st Open: Queen City Flyers, Marquette, MI
+Guts 2nd Open: Thundering Zunts, Manitowoc, WI
+Guts 3rd Open: Gonzos, Marquette, MI
+Guts 1st Women: NA
+Guts 2nd Women: NA
+Guts 3rd Women: NA
+K9 1st: Columbo
+K9 2nd: Aquanut Burns
+K9 3rd: Sydney (Sido)
+
+Year: 1979
+City: Sheboygan
+Location: Vollrath Park
+Overall 1st Junior12:
+Overall 2nd Junior12:
+Overall 3rd Junior12:
+Overall 1st Junior15:
+Overall 2nd Junior15:
+Overall 3rd Junior15:
+Overall 1st Open:
+Overall 2nd Open:
+Overall 3rd Open:
+Overall 1st Women:
+Overall 2nd Women:
+Overall 3rd Women:
+Overall 1st Amateur:
+Overall 2nd Amateur:
+Overall 3rd Amateur:
+Overall 1st Masters:
+Overall 2nd Masters: 
+Overall 3rd Masters: 
+Overall 1st Grandmasters: 
+Overall 2nd Grandmasters: 
+Overall 3rd Grandmasters: 
+Accuracy 1st Junior12: 
+Accuracy 2nd Junior12:  
+Accuracy 3rd Junior12: 
+Accuracy 1st Junior15: 
+Accuracy 2nd Junior15: 
+Accuracy 3rd Junior15: 
+Accuracy 1st Open: 
+Accuracy 2nd Open: 
+Accuracy 3rd Open: 
+Accuracy 1st Women: 
+Accuracy 2nd Women: 
+Accuracy 3rd Women: 
+Accuracy 1st Amateur: 
+Accuracy 2nd Amateur: 
+Accuracy 3rd Amateur: 
+Accuracy 1st Masters: 
+Accuracy 2nd Masters: 
+Accuracy 3rd Masters: 
+Accuracy 1st Grandmasters: 
+Accuracy 2nd Grandmasters: 
+Accuracy 3rd Grandmasters: 
+Distance 1st Junior12:  
+Distance 2nd Junior12: 
+Distance 3rd Junior12:  
+Distance 1st Junior15: 
+Distance 2nd Junior15: 
+Distance 3rd Junior15: 
+Distance 1st Open:  
+Distance 2nd Open: 
+Distance 3rd Open: 
+Distance 1st Women: 
+Distance 2nd Women: 
+Distance 3rd Women: 
+Distance 1st Amateur: 
+Distance 2nd Amateur: 
+Distance 3rd Amateur: 
+Distance 1st Masters: 
+Distance 2nd Masters: 
+Distance 3rd Masters: 
+Distance 1st Grandmasters: 
+Distance 2nd Grandmasters: 
+Distance 3rd Grandmasters: 
+MTA 1st Junior12: 
+MTA 2nd Junior12: 
+MTA 3rd Junior12: 
+MTA 1st Junior15: 
+MTA 2nd Junior15: 
+MTA 3rd Junior15: 
+MTA 1st Open: 
+MTA 2nd Open: 
+MTA 3rd Open: 
+MTA 1st Women: 
+MTA 2nd Women: 
+MTA 3rd Women: 
+MTA 1st Amateur: 
+MTA 2nd Amateur: 
+MTA 3rd Amateur: 
+MTA 1st Masters: 
+MTA 2nd Masters: 
+MTA 3rd Masters: 
+MTA 1st Grandmasters: 
+MTA 2nd Grandmasters: 
+MTA 3rd Grandmasters: 
+Golf 1st Junior12: 
+Golf 2nd Junior12: 
+Golf 3rd Junior12: 
+Golf 1st Junior15:
+Golf 2nd Junior15:
+Golf 3rd Junior15:
+Golf 1st Open:
+Golf 2nd Open:
+Golf 3rd Open:
+Golf 1st Women:
+Golf 2nd Women:
+Golf 3rd Women:
+Golf 1st Amateur: 
+Golf 2nd Amateur: 
+Golf 3rd Amateur: 
+Golf 1st Masters: 
+Golf 2nd Masters: 
+Golf 3rd Masters: 
+Golf 1st Grandmasters: 
+Golf 2nd Grandmasters: 
+Golf 3rd Grandmasters: 
+Freestyle 1st Junior12: 
+Freestyle 2nd Junior12: 
+Freestyle 3rd Junior12: 
+Freestyle 1st Junior15: 
+Freestyle 2nd Junior15: 
+Freestyle 3rd Junior15: 
+Freestyle 1st Open:
+Freestyle 2nd Open:
+Freestyle 3rd Open:
+Freestyle 1st Women:
+Freestyle 2nd Women:
+Freestyle 3rd Women: 
+Freestyle 1st Amateur: 
+Freestyle 2nd Amateur: 
+Freestyle 3rd Amateur: 
+Freestyle 1st Masters: 
+Freestyle 2nd Masters: 
+Freestyle 3rd Masters: 
+Freestyle 1st Grandmasters: 
+Freestyle 2nd Grandmasters: 
+Freestyle 3rd Grandmasters: 
+Discathon 1st Junior12: 
+Discathon 2nd Junior12: 
+Discathon 3rd Junior12: 
+Discathon 1st Junior15: 
+Discathon 2nd Junior15: 
+Discathon 3rd Junior15: 
+Discathon 1st Open: 
+Discathon 2nd Open: 
+Discathon 3rd Open: 
+Discathon 1st Women: 
+Discathon 2nd Women: 
+Discathon 3rd Women: 
+Discathon 1st Amateur: 
+Discathon 2nd Amateur: 
+Discathon 3rd Amateur: 
+Discathon 1st Masters: 
+Discathon 2nd Masters: 
+Discathon 3rd Masters: 
+Discathon 1st Grandmasters: 
+Discathon 2nd Grandmasters: 
+Discathon 3rd Grandmasters: 
+Ultimate 1st Open:
+Ultimate 2nd Open:
+Ultimate 3rd Open:
+Ultimate 1st Women: 
+Ultimate 2nd Women: 
+Ultimate 3rd Women: 
+Guts 1st Open:
+Guts 2nd Open:
+Guts 3rd Open:
+Guts 1st Women: 
+Guts 2nd Women: 
+Guts 3rd Women: 
+K9 1st:
+K9 2nd:
+K9 3rd:
+
