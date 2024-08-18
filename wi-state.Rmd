@@ -25,7 +25,7 @@ Read the sheet
 url <- "https://docs.google.com/spreadsheets/d/1NNZ0dWsWdY8BM3R6KGCDZAMMH_O_Xikl7_PB1SVsLSY/edit#gid=0"
 Results.df <- googlesheets4::read_sheet(url, 
                                         na = "NA",
-                                        col_types = "cncccccccccccccnnnn"
+                                        col_types = "cncccccccccccccnnnnc"
                                         )
 ```
 
@@ -33,7 +33,7 @@ Results.df <- googlesheets4::read_sheet(url,
 names(Results.df)
 ```
 
-MTA Records
+Best MTA times, Open
 ```{r}
 Xp <- Results.df |>
   dplyr::filter(Event == "SCF", Division == "Open") |>
@@ -44,6 +44,18 @@ Xf <- Results.df |>
   dplyr::select(Year, Event, Place, Name = "Player 1", 
                 Time_s = "Scores 2")
 X <- rbind(Xp, Xf)
-X |>
-  dplyr::arrange(desc(Time_s))
+X |> 
+  dplyr::arrange(desc(Time_s)) |>
+  print(n = 20)
 ```
+
+Number of Overall wins, Open
+```{r}
+Results.df |>
+  dplyr::filter(Event == "Overall", Division == "Open", Place == "1st") |>
+  dplyr::select(Tournament, Year, Name = "Player 1") |>
+  dplyr::group_by(Name) |>
+  dplyr::summarise(Wins = dplyr::n()) |>
+  dplyr::arrange(desc(Wins))
+```
+
