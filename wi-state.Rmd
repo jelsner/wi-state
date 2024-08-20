@@ -33,15 +33,17 @@ Results.df <- googlesheets4::read_sheet(url,
 names(Results.df)
 ```
 
-Best MTA times, Open
+Bests
 ```{r}
+div <- "Open"
+eve <- "SCF"
 Xp <- Results.df |>
-  dplyr::filter(Event == "SCF", Division == "Open") |>
-  dplyr::select(Year, Event, Place, Name = "Player 1", 
+  dplyr::filter(Event == eve, Division == div) |>
+  dplyr::select(Year, Event, Division, Place, Name = "Player 1", 
                 Time_s = "Scores (Distance, m; SCF, s; DDC, wins; etc)")
 Xf <- Results.df |>
-  dplyr::filter(Event == "SCF", Division == "Open") |>
-  dplyr::select(Year, Event, Place, Name = "Player 1", 
+  dplyr::filter(Event == eve, Division == div) |>
+  dplyr::select(Year, Event, Division, Place, Name = "Player 1", 
                 Time_s = "Scores 2")
 X <- rbind(Xp, Xf)
 X |> 
@@ -49,13 +51,19 @@ X |>
   print(n = 20)
 ```
 
-Number of Overall wins, Open
+Number of 1st place finishes
 ```{r}
+div <- "Women"
+eve <- "SCF"
 Results.df |>
-  dplyr::filter(Event == "Overall", Division == "Open", Place == "1st") |>
+  dplyr::filter(Event == eve, Division == div, Place == "1st") |>
   dplyr::select(Tournament, Year, Name = "Player 1") |>
   dplyr::group_by(Name) |>
-  dplyr::summarise(Wins = dplyr::n()) |>
-  dplyr::arrange(desc(Wins))
+  dplyr::summarise(
+                   Event = eve,
+                   Division = div,
+                   Firsts = dplyr::n()
+                   ) |>
+  dplyr::arrange(desc(Firsts))
 ```
 
