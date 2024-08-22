@@ -23,7 +23,7 @@ googlesheets4::gs4_auth(
 Read the sheet
 ```{r}
 url <- "https://docs.google.com/spreadsheets/d/1NNZ0dWsWdY8BM3R6KGCDZAMMH_O_Xikl7_PB1SVsLSY/edit#gid=0"
-Results.df <- googlesheets4::read_sheet(url, 
+Results.df <- googlesheets4::read_sheet(url,
                                         na = "NA",
                                         col_types = "cncccccccccccccnnnnc"
                                         )
@@ -65,5 +65,54 @@ Results.df |>
                    Firsts = dplyr::n()
                    ) |>
   dplyr::arrange(desc(Firsts))
+```
+
+Number of podium finishes all events
+```{r}
+div <- "Open"
+P1 <- Results.df |>
+  dplyr::filter(Division == div) |>
+  dplyr::select(Tournament, Year, Name = "Player 1") |>
+  dplyr::filter(Name != "") |>
+  dplyr::group_by(Name) |>
+  dplyr::summarise(
+                   Division = div,
+                   Podiums = dplyr::n()
+                   ) |>
+  dplyr::arrange(desc(Podiums))
+P2 <- Results.df |>
+  dplyr::filter(Division == div) |>
+  dplyr::select(Tournament, Year, Name = "Player 2") |>
+  dplyr::filter(Name != "") |>
+  dplyr::group_by(Name) |>
+  dplyr::summarise(
+                   Division = div,
+                   Podiums = dplyr::n()
+                   ) |>
+  dplyr::arrange(desc(Podiums))
+P3 <- Results.df |>
+  dplyr::filter(Division == div) |>
+  dplyr::select(Tournament, Year, Name = "Player 3") |>
+  dplyr::filter(Name != "") |>
+  dplyr::group_by(Name) |>
+  dplyr::summarise(
+                   Division = div,
+                   Podiums = dplyr::n()
+                   ) |>
+  dplyr::arrange(desc(Podiums))
+
+P <- dplyr::full_join(P1, P2, by = "Name")
+P <- dplyr::full_join(P, P3, by = "Name")
+
+P <- P |>
+  dplyr::mutate_all(~ ifelse(is.na(.), 0, .))
+
+P$Podiums <- P$Podiums.x + P$Podiums.y + P$Podiums
+
+P |> 
+  dplyr::select(Name, Podiums) |>
+  dplyr::arrange(desc(Podiums)) |>
+  print(n = 25)
+
 ```
 
