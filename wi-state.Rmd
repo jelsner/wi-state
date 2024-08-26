@@ -36,19 +36,19 @@ names(Results.df)
 Bests
 ```{r}
 div <- "Open"
-eve <- "SCF"
+eve <- "Distance"
 Xp <- Results.df |>
   dplyr::filter(Event == eve, Division == div) |>
   dplyr::select(Year, Event, Division, Place, Name = "Player 1", 
-                Time_s = "Scores (Distance, m; SCF, s; DDC, wins; etc)")
+                Measurement = "Scores (Distance, m; SCF, s; DDC, wins; etc)")
 Xf <- Results.df |>
   dplyr::filter(Event == eve, Division == div) |>
   dplyr::select(Year, Event, Division, Place, Name = "Player 1", 
-                Time_s = "Scores 2")
+                Measurement = "Scores 2")
 X <- rbind(Xp, Xf)
 X |> 
-  dplyr::arrange(desc(Time_s)) |>
-  print(n = 20)
+  dplyr::arrange(desc(Measurement)) |>
+  print(n = 50)
 ```
 
 Number of 1st place finishes
