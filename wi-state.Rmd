@@ -25,7 +25,7 @@ Read the sheet
 url <- "https://docs.google.com/spreadsheets/d/1NNZ0dWsWdY8BM3R6KGCDZAMMH_O_Xikl7_PB1SVsLSY/edit#gid=0"
 Results.df <- googlesheets4::read_sheet(url,
                                         na = "NA",
-                                        col_types = "cncccccccccccccnnnnc"
+                                        col_types = "cncccccccccccccnnnnnc"
                                         )
 ```
 
@@ -33,28 +33,34 @@ Results.df <- googlesheets4::read_sheet(url,
 names(Results.df)
 ```
 
+
 Bests
 ```{r}
 div <- "Open"
-eve <- "Distance"
+eve <- "Accuracy"
 Xp <- Results.df |>
   dplyr::filter(Event == eve, Division == div) |>
   dplyr::select(Year, Event, Division, Place, Name = "Player 1", 
-                Measurement = "Scores (Distance, m; SCF, s; DDC, wins; etc)")
+                Measurement = "Scores 1")
 Xf <- Results.df |>
   dplyr::filter(Event == eve, Division == div) |>
   dplyr::select(Year, Event, Division, Place, Name = "Player 1", 
                 Measurement = "Scores 2")
-X <- rbind(Xp, Xf)
+
+Xf2 <- Results.df |>
+  dplyr::filter(Event == eve, Division == div) |>
+  dplyr::select(Year, Event, Division, Place, Name = "Player 1", 
+                Measurement = "Scores 3")
+X <- rbind(Xp, Xf, Xf2)
 X |> 
   dplyr::arrange(desc(Measurement)) |>
-  print(n = 50)
+  print(n = 30)
 ```
 
 Number of 1st place finishes
 ```{r}
-div <- "Women"
-eve <- "SCF"
+div <- "Open"
+eve <- "Accuracy"
 Results.df |>
   dplyr::filter(Event == eve, Division == div, Place == "1st") |>
   dplyr::select(Tournament, Year, Name = "Player 1") |>
@@ -113,6 +119,39 @@ P |>
   dplyr::select(Name, Podiums) |>
   dplyr::arrange(desc(Podiums)) |>
   print(n = 25)
-
 ```
 
+Individual bests
+```{r}
+person <- "Andrew Lemann"
+
+events <- c("Accuracy", "Distance", "SCF")
+Results.df |> 
+  dplyr::select(Player = "Player 1", Year, Location, Event,
+                Measurement1 = "Scores 1",
+                Measurement2 = "Scores 2",
+                Measurement3 = "Scores 3") |>
+  dplyr::filter(Player == person) |>
+  dplyr::filter(Event %in% events) |>
+  tidyr::pivot_longer(cols = c("Measurement1", "Measurement2", "Measurement3"),
+                      names_to = "Which",
+                      values_to = "Measurement") |>  
+  dplyr::group_by(Event) |>
+  dplyr::slice_max(Measurement) |>
+  dplyr::select(Player, Year, Location, Event, Measurement)
+
+events <- c("Golf", "Discathon")
+Results.df |> 
+  dplyr::select(Year, Event, Location, Player = "Player 1", 
+                Measurement1 = "Scores 1",
+                Measurement2 = "Scores 2",
+                Measurement3 = "Scores 3") |>
+  dplyr::filter(Player == person) |>
+  dplyr::filter(Event %in% events) |>
+  tidyr::pivot_longer(cols = c("Measurement1", "Measurement2"),
+                      names_to = "Which",
+                      values_to = "Measurement") |>
+  dplyr::group_by(Event) |>
+  dplyr::slice_min(Measurement) |>
+  dplyr::select(Player, Year, Location, Event, Measurement)
+```
