@@ -156,3 +156,40 @@ Results.df |>
   dplyr::slice_min(Measurement) |>
   dplyr::select(Player, Year, Location, Event, Measurement)
 ```
+
+Create a SQL database
+```{r}
+# Install necessary packages if not already installed
+install.packages("googlesheets4")
+install.packages("DBI")
+install.packages("RSQLite")
+```
+
+```{r}
+library(DBI)
+library(RSQLite)
+
+# Connect to SQLite database (or create it if it doesn't exist)
+con <- dbConnect(RSQLite::SQLite(), "WI_State_Results.db")
+
+# View the data to ensure it has loaded correctly
+print(Results.df)
+```
+
+```{r}
+# Write data to the SQL database; this creates a new table named 'your_table'
+dbWriteTable(con, "your_table", Results.df, overwrite = TRUE)
+
+# Verify the data is in the database
+dbListTables(con)
+dbReadTable(con, "your_table")
+
+# Close the database connection
+dbDisconnect(con)
+```
+
+This approach can be adapted to other SQL databases like MySQL or PostgreSQL by changing the connection details (`dbConnect()`).
+
+Ensure that your Google Sheets API credentials have the correct permissions if you run into access issues.
+
+
