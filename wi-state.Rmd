@@ -170,7 +170,7 @@ library(DBI)
 library(RSQLite)
 
 # Connect to SQLite database (or create it if it doesn't exist)
-con <- dbConnect(RSQLite::SQLite(), "WI_State_Results.db")
+con <- dbConnect(RSQLite::SQLite(), "data/WI_State_Results.db")
 
 # View the data to ensure it has loaded correctly
 print(Results.df)
@@ -178,11 +178,11 @@ print(Results.df)
 
 ```{r}
 # Write data to the SQL database; this creates a new table named 'your_table'
-dbWriteTable(con, "your_table", Results.df, overwrite = TRUE)
+dbWriteTable(con, "db_structure", Results.df, overwrite = TRUE)
 
 # Verify the data is in the database
 dbListTables(con)
-dbReadTable(con, "your_table")
+dbReadTable(con, "db_structure")
 
 # Close the database connection
 dbDisconnect(con)
