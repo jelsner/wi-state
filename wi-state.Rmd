@@ -24,6 +24,7 @@ Read the sheet
 ```{r}
 url <- "https://docs.google.com/spreadsheets/d/1NNZ0dWsWdY8BM3R6KGCDZAMMH_O_Xikl7_PB1SVsLSY/edit#gid=0"
 Results.df <- googlesheets4::read_sheet(url,
+                                        range = "A1:U",
                                         na = "NA",
                                         col_types = "cncccccccccccccnnnnnc"
                                         )
