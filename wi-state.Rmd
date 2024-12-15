@@ -155,6 +155,7 @@ Results.df |>
   dplyr::group_by(Event) |>
   dplyr::slice_min(Measurement) |>
   dplyr::select(Player, Year, Location, Event, Measurement)
+
 ```
 
 Create a SQL database
